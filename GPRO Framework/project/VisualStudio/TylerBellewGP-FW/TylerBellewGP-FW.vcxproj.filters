@@ -15,7 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\source\TylerBellewGP-FW\bellew.c">
+    <ClInclude Include="..\..\..\include\TylerBellewGP-FW\bellew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\TylerBellewGP-FW\bellew.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
