@@ -1,11 +1,21 @@
 // GPRO-FW-Launcher.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 #include <iostream>
-#include "TylerBellewGP-FW/bellew.h"
+#include "TylerBellewGP-FW/random.h"
 using namespace std;
 int main()
 {
-	int test = foo(9000);
+	char retry = 'y';
+	int guessleft = 3;
+	int randomNumber;
 
-	cout << endl << test << endl;
+	if (retry == 'y')
+	{
+		
+		cout >> "Guess a number between 1 and 10" << endl;
+		cout >> Y
+
+	}
+		
+	
 }

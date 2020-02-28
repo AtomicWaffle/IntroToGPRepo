@@ -147,10 +147,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\source\TylerBellewGP-FW\bellew.cpp" />
+    <ClCompile Include="..\..\..\source\TylerBellewGP-FW\random.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\include\TylerBellewGP-FW\bellew.h" />
+    <ClInclude Include="..\..\..\include\TylerBellewGP-FW\random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
