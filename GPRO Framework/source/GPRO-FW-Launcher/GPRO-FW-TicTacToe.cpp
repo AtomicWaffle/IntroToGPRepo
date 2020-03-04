@@ -1,5 +1,6 @@
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 
 //-----------------------------------------------------------------------------
@@ -62,13 +63,37 @@ inline gs_tictactoe_index gs_tictactoe_reset(gs_tictactoe game)
 
 int launchTicTacToe()
 {
-	gs_tictactoe game = { 0 };
-
+	gs_tictactoe game;
 	gs_tictactoe_reset(game);
 
-
-
 	return 0;
+}
+
+gs_tictactoe_space_state winCheck(gs_tictactoe game)
+{
+	gs_tictactoe_space_state retState;
+
+	// rows
+	if (game[0][0] == gs_tictactoe_space_x && game[1][0] == gs_tictactoe_space_x && game[2][0] == gs_tictactoe_space_x)
+		return gs_tictactoe_space_x;
+	else if (game[0][0] == gs_tictactoe_space_o && game[1][0] == gs_tictactoe_space_o && game[2][0] == gs_tictactoe_space_o)
+		return gs_tictactoe_space_o;
+
+	else if (game[0][1] == gs_tictactoe_space_x && game[1][1] == gs_tictactoe_space_x && game[2][1] == gs_tictactoe_space_x)
+		return gs_tictactoe_space_x;
+	else if (game[0][1] == gs_tictactoe_space_o && game[1][1] == gs_tictactoe_space_o && game[2][1] == gs_tictactoe_space_o)
+		return gs_tictactoe_space_o;
+
+	else if (game[0][2] == gs_tictactoe_space_x && game[1][2] == gs_tictactoe_space_x && game[2][2] == gs_tictactoe_space_x)
+		return gs_tictactoe_space_x;
+	else if (game[0][2] == gs_tictactoe_space_o && game[1][2] == gs_tictactoe_space_o && game[2][2] == gs_tictactoe_space_o)
+		return gs_tictactoe_space_o;
+
+	//columns
+	else if (game[0][0] == gs_tictactoe_space_x && game[0][1] == gs_tictactoe_space_x && game[0][2] == gs_tictactoe_space_x)
+		return gs_tictactoe_space_x;
+	else if (game[0][0] == gs_tictactoe_space_o && game[0][1] == gs_tictactoe_space_o && game[0][2] == gs_tictactoe_space_o)
+		return gs_tictactoe_space_o;
 }
 
 
